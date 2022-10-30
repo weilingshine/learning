@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 01
+        for (let i=1; i<=10; i++){
+            if(i==5){
+                continue
+            }
+            document.write(`${i}<br>`)
+        }
+        document.write(`<br>`)
+        
+        // 02
+        for (let i=1; i<=10; i++){
+            if(i==5){
+                break
+            }
+            document.write(`${i}<br>`)
+        }
+
+        // 03
+        // let count=1;    
+        // let num=44;
+        // while(true){
+        //     let answer = prompt(`你是第${count}猜測，請輸入數字大小`)
+        //     if(answer==num){
+        //         break
+        //     }
+        //     count ++
+        // }
+
+        // 05
+        let count = 1;
+        let num = 77;
+        while(true){
+            let answer=prompt(`你是第幾${count}次猜數字，請輸入神秘數字`)
+            if(answer > num){
+                alert(`比神秘數字大，請重新猜測`)
+            } else if(answer < num){
+                alert(` 比神秘數字小，請重新猜測`)
+            }else break
+            count ++ 
+        }
+        console.log(`${count}`)
+        document.write(`猜了${count}次`)
+    </script>
+</body>
+</html>
