@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 宣告一個數字陣列
+        // 印出陣列 第 x 個數字為 y
+        // 求 41 是第幾個數字
+        // 有幾個奇數和幾個偶數
+        // 最大數字和最小數字
+        let odd = 0
+        let even = 0
+        let max = 0
+        let min = 0
+        let num41=0
+        let numbers = [33, 75, 69, 41, 50, 19]
+
+        // 印出陣列 第 x 個數字為 y
+        for (let i=0; i<numbers.length; i++){
+            document.write(`第${i}列,數字為${numbers[i]}<br>`)
+            // 有幾個奇數和幾個偶數
+            if(numbers[i]%2){
+                odd+=1
+            }else {even +=1}
+            document.write(`${numbers[i]}<br>`)
+            // 求 41 是第幾個數字
+            if (numbers[i]!=41){
+                num41+=1
+            }else {break}
+            // 最大數字
+            if(max < numbers[i]){
+                max = numbers[i]
+            }
+            // 最小數字
+            min = numbers[i]
+            if( max > numbers[i]){
+                min = numbers[i]
+                console.log(min)
+            }
+        }
+        document.write(`奇數${odd}個,偶數${even}個<br>`)
+        document.write(`max=${max}<br>`)
+        document.write(`min=${min}<br>`)
+        document.write(`num41=${num41+1}`)
+    
+    </script>
+</body>
+</html>
