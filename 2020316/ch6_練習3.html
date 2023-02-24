@@ -20,20 +20,42 @@
 
         // 每一個銷售員的銷售總金額
         // 每一項產品的銷售總金額
+
+
         let data = [
-            [33, 32, 56, 45, 33],
-            [77, 33, 68, 45, 23],
-            [43, 55, 43, 67, 65]
+        [33, 32, 56, 45, 33],
+        [77, 33, 68, 45, 23],
+        [43, 55, 43, 67, 65]
         ]
-        let price = [12, 16, 10, 14, 15]
-        // 每一個銷售員的銷售總金額
-        for (let i = 0;  i < data.length; i++){
-            let sallmantotal = 0
-            for (let j = 0; j < data[i].length; j++){
-                sallmantotal += data[i][j] * price[j]
+        let price =[12,16,10,14,15]
+        for (let i = 0; i<data.length; i++){
+            let sellmantotal=0
+            for (let j = 0; j< data[i].length; j++){
+                sellmantotal += data[i][j] * price[i]
+            // console.log(`第${data[i]}銷售員，銷售總金額`)
+
             }
-            console.log(`銷售員 ${i+1} : ${sallmantotal} 元`)
+            console.log(`第${i+1}銷售員，共銷售${sellmantotal}元`)
         }
+
+
+
+
+
+        // let data = [
+        //     [33, 32, 56, 45, 33],
+        //     [77, 33, 68, 45, 23],
+        //     [43, 55, 43, 67, 65]
+        // ]
+        // let price = [12, 16, 10, 14, 15]
+        // // 每一個銷售員的銷售總金額
+        // for (let i = 0;  i < data.length; i++){
+        //     let sallmantotal = 0
+        //     for (let j = 0; j < data[i].length; j++){
+        //         sallmantotal += data[i][j] * price[j]
+        //     }
+        //     console.log(`銷售員 ${i+1} : ${sallmantotal} 元`)
+        // }
     
     </script>
 </body>
